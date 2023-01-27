@@ -1,0 +1,55 @@
+/* MODAL */
+
+/* variables */
+:root {
+  --col-white: hsl(0, 0%, 100%);
+  --col-black: hsl(0, 0%, 0%);
+  --modal-width: 400px;
+  --modal-height: 150px;
+  --radius-S: 5px;
+  --space-XS: 16px;
+  --modal-duration: 0.8s;
+  --col-overlay: hsla(72,87%,23%, 0.6);
+}
+
+.modal.overlay {
+  background-color: var(--col-overlay);
+  position: fixed;
+  inset: 0;
+}
+
+.modalBody {
+  width: 100%;
+  max-width: var(--modal-width);
+  height: var(--modal-height);
+  background-color: var(--col-white);
+  border: 1px solid var(--col-black);
+  position: relative;
+  top: calc(50% - var(--modal-height));
+  left: calc(50% - (var(--modal-width)/2));
+
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-S);
+
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal__closeCross {
+  cursor: pointer;
+  position: absolute;
+  top: var(--space-XS);
+  right: var(--space-XS);
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
