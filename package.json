@@ -1,19 +1,22 @@
 {
   "name": "hrnet-modal-component",
   "description": "A simple React Modal component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "files": [ "dist", "README.md" ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sylviecanongia/hrnet-modal-component.git"
   },
-  "babel": {  
-    "presets": [  
+  "babel": {
+    "presets": [
       "@babel/preset-react",
-      "@babel/preset-env" 
-    ] 
+      "@babel/preset-env"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",
