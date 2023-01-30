@@ -5,7 +5,7 @@ This library is part of a project of my Openclassrooms course. It's a simple Mod
 ## Installation
 
 ```bash
-  npm install @simplydev/hrnet-modal-component
+  npm install hrnet-modal-component
 ```
 
 ## Usage in your react project
