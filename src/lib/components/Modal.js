@@ -12,9 +12,9 @@ import "./../css/main.css";
 const Modal = ( { message, onClose } ) => {
 
   return (
-    // onClick for closing by clicking on the overlay window
+   // closing by clicking on the overlay window or on the cross
     <div onClick={onClose} className="modal overlay">
-    {/* stopPropagation prevents onClose to be propagated to the modal window */}
+      {/* stopPropagation prevents onClose to be propagated to the modal window */}
       <div onClick={(e) => {
         e.stopPropagation();
       }} className="modalBody">

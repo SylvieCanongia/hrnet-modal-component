@@ -15,17 +15,19 @@ Call the component with the right props. Here's an example of what you can do :
 ```javascript
 // App.js
 import { useState } from "react";
-import { Modal } from '@simplydev/hrnet-modal-component';
+import { Modal } from 'hrnet-modal-component';
 
 const MyComponent = () => {
+
+  // Define the state variables here
   const [openModal, setOpenModal] = useState(false);
 
   ...
-  // A button to open the modal on Click
+  // 'onClick' event to open the modal
   <button onClick={() => setOpenModal(true)}>Open</button>
   ...
 
-  // Conditional rendering of the modal if openModal is 'true'
+  // A way to show the modal with conditional rendering
   { openModal &&
   <Modal
     onClose={() => setOpenModal(false)}

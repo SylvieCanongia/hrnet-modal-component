@@ -1,8 +1,9 @@
+/* Remove these styles if you don't need them */
+
 html, body, #root {
   height: 100%;
 }
-
-.app {
+ .app {
   min-height: 100%;
   display: flex;
   justify-content: center;

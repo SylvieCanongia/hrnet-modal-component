@@ -1,5 +1,5 @@
 {
-  "name": "@simplydev/hrnet-modal-component",
+  "name": "hrnet-modal-component",
   "description": "A simple React Modal component",
   "version": "0.1.0",
   "main": "dist/index.js",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts-build",
+    "build": "react-scripts build",
     "publish:npm": "SET NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
