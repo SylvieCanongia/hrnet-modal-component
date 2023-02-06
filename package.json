@@ -2,6 +2,8 @@
   "name": "hrnet-modal-component",
   "description": "A simple React Modal component",
   "version": "0.1.1",
+  "author": "Sylvie HRnet team",
+  "keywords": ["react", "modal"],
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
